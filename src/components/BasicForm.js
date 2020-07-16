@@ -43,12 +43,12 @@ class SimpleForm extends Component {
     }));
   };
 
-  handleIdChange = (e, data) => {
-    console.log("ID: " + data.value);
-    this.setState({
-      error_id: e.target.value === "" ? true : false,
-    });
-  };
+  // handleIdChange = (e, data) => {
+  //   console.log("ID: " + data.value);
+  //   this.setState({
+  //     error_id: e.target.value === "" ? true : false,
+  //   });
+  // };
 
   render() {
     return (
@@ -83,7 +83,7 @@ class SimpleForm extends Component {
                       });
                       return value;
                     }}
-                    onChange={this.handleIdChange}
+                    // onChange={this.handleIdChange}
                   />
                 </div>
                 <div style={rowDivStyle}>
