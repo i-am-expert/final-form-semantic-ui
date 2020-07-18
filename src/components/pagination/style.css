@@ -1,0 +1,30 @@
+a.item {
+  font-family: Tondo, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+a.item:hover {
+  z-index: 3 !important;
+  color: #23527c !important;
+  background-color: #eee !important;
+  border-color: #ddd !important;
+}
+
+a.active.item {
+  background-color: #db5031 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.ui.pagination.menu {
+  font-size: 13px;
+  border: none !important;
+  min-height: auto;
+  height: 32px;
+}
+a {
+  border: none !important;
+}
+
+a:focus {
+  outline: none;
+}

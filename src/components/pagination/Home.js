@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Icon, Pagination } from "semantic-ui-react";
 import axios from "axios";
+import "./style.css";
 
 export class Home extends Component {
   constructor(props) {
@@ -53,16 +54,17 @@ export class Home extends Component {
         {this.state.currentPosts.map((post) => (
           <li key={post.id}>{post.title}</li>
         ))}
+        <br /> <br />
         <Pagination
           activePage={this.state.activePage}
-          ellipsisItem={{
-            content: <Icon name="ellipsis horizontal" />,
-            icon: true,
-          }}
-          firstItem={{ content: <Icon name="angle double left" />, icon: true }}
-          lastItem={{ content: <Icon name="angle double right" />, icon: true }}
-          prevItem={{ content: <Icon name="angle left" />, icon: true }}
-          nextItem={{ content: <Icon name="angle right" />, icon: true }}
+          //   ellipsisItem={{
+          //     content: <Icon name="ellipsis horizontal" />,
+          //     icon: true,
+          //   }}
+          firstItem={{ content: "First" }}
+          lastItem={{ content: "Last" }}
+          prevItem={{ content: <Icon name="angle double left" />, icon: true }}
+          nextItem={{ content: <Icon name="angle double right" />, icon: true }}
           totalPages={this.state.totalPages}
           onPageChange={this.handlePaginationChange}
         />
