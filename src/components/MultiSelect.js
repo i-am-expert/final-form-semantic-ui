@@ -12,10 +12,10 @@ const colorOptions = [
   { key: "O", value: "O", text: "Orange" },
 ];
 
-export class MultiSelect extends Component {
+class MultiSelect extends Component {
   showResults = async (values) => {
     await sleep(500);
-    window.alert(JSON.stringify(values, undefined, 2));
+    window.alert(this.state.colors);
   };
 
   handleChange = (e, data) => {
@@ -45,6 +45,8 @@ export class MultiSelect extends Component {
                 style={{ width: "50%" }}
               />
             </div>
+
+            {/* <Button positive type="submit" content="Submit" /> */}
           </form>
         )}
       />

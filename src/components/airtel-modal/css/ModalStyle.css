@@ -1,0 +1,61 @@
+div.ui.input {
+  width: 100%;
+  padding-top: 7.5px;
+}
+
+div.actions {
+  float: right;
+  border-top: 0px !important;
+  margin-top: 10px;
+}
+
+div.ui.small.modal {
+  margin-top: -70px;
+  font-family: unset;
+}
+
+div.scrolling.content {
+  height: 450;
+}
+
+div.visible.menu.transition {
+  margin-bottom: 20px !important;
+}
+
+.labelClass {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+div.ui.fluid {
+  width: 100% !important;
+  margin-top: 7.5px;
+}
+
+button.ui.grey.inverted {
+  color: black !important;
+}
+
+fieldset {
+  border-width: 1px;
+}
+
+fieldset h4 {
+  margin-top: 0;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+div.ui.divider {
+  margin-bottom: 0;
+}
+
+.fieldError {
+  /* margin-left: 20px; */
+  float: right;
+  color: red;
+}
